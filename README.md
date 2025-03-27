@@ -4,7 +4,6 @@
 
 ![Mealy](DiagramaDeEstados.png)
 
-**_Explicación_**:
 On the _Inicial_ state, the machine is waiting to be turned in by the **A** key, and stays on the same state with any other input.
 
 In the _PWM on_ state, the PWM is active and can vary the LED intensity by entering a two figure number which is represented with the input **xx**. **A** and **C** don't have any effect in this state, and if they are pressed the Duty Cycle remains with the saved value **yy**. With the **B** key, the PWM is turned off and the machine returns to the initial state. And with the input of the number **xx**, the machine changes to the next state and the output remains on **yy** provisionally.
